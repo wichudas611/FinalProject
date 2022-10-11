@@ -5,7 +5,7 @@
         class="navbar-brand btn btn-outline"
         v-on:click="navigateTo('/IndexAdmin')"
       >
-        BookSale
+        Car Rental
       </button>
 
       <button
@@ -18,14 +18,14 @@
     </nav>
     <br />
     <div class="container">
-      <h2 class="center white">คำสั่งซื้อทั้งหมด</h2>
+      <h2 class="center white">คำสั่งเช่ายืมทั้งหมด</h2>
       <h4 class="center white">
-        จํานวนคำสั่งซื้อทั้งหมด {{ orders.length }} รายการ
+        จํานวนคำสั่งเช่ายืมทั้งหมด {{ orders.length }} รายการ
       </h4>
       <div v-for="order in orders" v-bind:key="order.id">
         <div class="jumbotron center bg-light">
-          <h3>รหัส: {{ order.id }}</h3>
-          <h4>ชื่อหนังสือ: {{ order.title }}</h4>
+          <h3>รหัสคำสั่งเช่ายืม: {{ order.id }}</h3>
+          <h4>ชื่อรถ: {{ order.title }}</h4>
           <h4>ราคา: {{ order.price }}</h4>
           <h4>ชื่อผู้สั่ง: {{ order.name }}</h4>
           <h4>ที่อยู่จัดส่ง: {{ order.address }}</h4>

@@ -1,27 +1,27 @@
 <template>
   <div class="pad bg-dark" width="100%" heigth="100%">
     <div class="container center">
-      <h1 class="center white">เพิ่มหนังสือ</h1>
+      <h1 class="center white">Add Car</h1>
       <div class="jumbotron center bg-light">
         <form v-on:submit.prevent="createBook">
           <p class="left">
-            ชื่อหนังสือ:
+            ยี่ห้อรถ :
             <input class="form-control " type="text" v-model="book.title"/>
           </p>
           <p class="left">
-            ผู้แต่ง:
+            ทะเบียนรถ :
             <input class="form-control " type="text" v-model="book.author" />
           </p>
           <p class="left">
-            ราคา:
+            ระยะเวลาในการให้เช่า :
             <input class="form-control " type="text" v-model="book.price" />
           </p>
           <p class="left">
-            ประเภท:
+            ราคา :
             <input class="form-control " type="text" v-model="book.type" />
           </p>
           <p class="left">
-            ภาพ:
+            Picture Car :
             <input class="form-control " type="text" v-model="book.pic" />
           </p>
           <p>

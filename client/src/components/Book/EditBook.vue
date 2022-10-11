@@ -5,23 +5,23 @@
       <div class="jumbotron center bg-light">
       <form v-on:submit.prevent="editBook">
         <p class="left">
-          ชื่อหนังสือ:
+          ยี่ห้อรถ :
           <input class="form-control " type="text" v-model="book.title" />
         </p>
         <p class="left">
-          ผู้แต่ง:
+          ทะเบียนรถ :
           <input class="form-control " type="text" v-model="book.author" />
         </p>
         <p class="left">
-          ราคา:
+          ระยะเวลาในการให้เช่า :
           <input class="form-control " type="text" v-model="book.price" />
         </p>
         <p class="left">
-          ประเภท:
+          ราคา :
           <input class="form-control " type="text" v-model="book.type" />
         </p>
         <p class="left">
-          ภาพ:
+          Picture Car :
           <input class="form-control " type="text" v-model="book.pic" />
         </p>
         <p>

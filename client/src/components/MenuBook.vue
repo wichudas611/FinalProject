@@ -2,9 +2,9 @@
   <div class="bg-dark">
     <br />
     <div class="container">
-      <h1 class="center white">หนังสือทั้งหมดในร้าน</h1>
+      <h1 class="center white">รถยนต์ทั้งหมดในร้าน</h1>
       <h4 class="center white">
-        จํานวนหนังสือทั้งหมด {{ books.length }} เล่ม
+        จํานวนรถยนต์ทั้งหมด {{ books.length }} คัน
       </h4>
 
       <div v-for="book in books" v-bind:key="book.id">
@@ -13,15 +13,15 @@
           <img :src="book.pic" :alt="book.title" width="30%" height="30%" />
           <br />
           <br />
-          <h4>ผู้แต่ง: {{ book.author }}</h4>
-          <h4>ราคา: {{ book.price }} บาท</h4>
-          <h4>ประเภท: {{ book.type }}</h4>
+          <h4>ยี่ห้อรถ : {{ book.author }}</h4>
+          <h4>ราคาเช่ายืม : {{ book.price }} บาท</h4>
+          <h4>จำนวนวันในการเช่า : {{ book.type }}</h4>
           <p>
             <button
               class="btn btn-primary btn-lg"
               v-on:click="navigateTo('/order/create')"
             >
-              สั่งซื้อ
+              เช่ารถยนต์
             </button>
           </p>
         </div>

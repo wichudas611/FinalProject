@@ -2,7 +2,7 @@
   <div class="pad bg-dark" width="100%" heigth="100%">
     <div class="container center">
       <div class="jumbotron center">
-        <h1>Admin <br />Menu</h1>
+        <h1>Car <br />Rental</h1>
         <br />
         <p>
           <button class="btn btn-primary" v-on:click="navigateTo('/users')">
@@ -11,12 +11,12 @@
         </p>
         <p>
           <button class="btn btn-primary" v-on:click="navigateTo('/books')">
-            หนังสือทั้งหมด
+            รถยนต์ทั้งหมด
           </button>
         </p>
         <p>
           <button class="btn btn-primary" v-on:click="navigateTo('/orders')">
-            คำสั่งซื้อทั้งหมด
+            คำสั่งเช่ายืมทั้งหมด
           </button>
         </p>
         <p>
