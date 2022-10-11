@@ -3,7 +3,7 @@
  <div class="container center">
    <div class="jumbotron center">
      <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Gray_book.png" width="10%" height="10%"/>
-    <h1>BookSale <br>Login</h1>
+    <h1>Car Rental <br>Login</h1>
     <br>
     <form v-on:submit.prevent="onLogin" class="form-group">
       <p>
